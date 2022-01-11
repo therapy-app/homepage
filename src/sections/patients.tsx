@@ -6,20 +6,20 @@ const PatientsSection: NextPage = () => {
     <Box>
         <Container maxW={'container.xl'} py={10}>
             <Flex height={'auto'} alignItems={'flex-start'}>
-                <VStack width={'full'}>
+                <VStack width={'full'} align={'flex-start'}>
                     <Box height={300}>
-                        <Heading as={'h3'} fontSize={'xl'}>Add patients</Heading>
+                        <Heading as={'h3'} fontSize={'xl'}>Manage patients</Heading>
                     </Box>
                     <Box height={300}>
-                        <Heading as={'h3'} fontSize={'xl'}>Add patients</Heading>
+                        <Heading as={'h3'} fontSize={'xl'}>Manage Findings</Heading>
                     </Box>
                     <Box height={300}>
-                        <Heading as={'h3'} fontSize={'xl'}>Add patients</Heading>
+                        <Heading as={'h3'} fontSize={'xl'}>Manage Observations</Heading>
                     </Box>
                 </VStack>
                 <VStack width={'full'} position={'sticky'} top={0} >
                     <Text fontWeight={700}>Patient Module</Text>
-                    <Heading as={'h2'}>Feature-rich patient management</Heading>
+                    <Heading as={'h2'} fontSize={'5xl'}>Feature-rich patient management</Heading>
                     <Text>TODO:</Text>
                 </VStack>
             </Flex>

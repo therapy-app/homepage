@@ -8,7 +8,7 @@ const AppointmentsSection: NextPage = () => {
             <Flex>
                 <VStack align={'flex-start'}>
                     <Text fontWeight={700}>Appointments and badging</Text>
-                    <Heading as={'h2'}>Manage Appointments</Heading>
+                    <Heading as={'h2'} fontSize={'5xl'}>Manage Appointments</Heading>
                     <Text>Advanced Analytics</Text>
                 </VStack>
             </Flex>
