@@ -11,6 +11,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import AnalyticsSection from "../src/sections/analytics";
 import AppointmentsSection from "../src/sections/appointments";
@@ -19,7 +20,7 @@ import PatientsSection from "../src/sections/patients";
 
 const IndexPage: NextPage = () => {
   return (
-    <Box>
+    <>
       <Box h={"100vh"}>
         <Nav></Nav>
         <Container maxW={"container.xl"} my={10}>
@@ -54,7 +55,8 @@ const IndexPage: NextPage = () => {
       <PatientsSection></PatientsSection>
       <AppointmentsSection></AppointmentsSection>
       <FaqSection></FaqSection>
-    </Box>
+      <Footer></Footer>
+    </>
   );
 };
 

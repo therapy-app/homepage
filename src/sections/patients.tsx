@@ -1,5 +1,6 @@
-import { Box, Container, Flex, Heading, HStack, Text, VStack } from '@chakra-ui/react'
+import { Box, Center, Container, Flex, Heading, HStack, Text, VStack } from '@chakra-ui/react'
 import type { NextPage } from 'next'
+import { Divider } from '@chakra-ui/react'
 
 const PatientsSection: NextPage = () => {
   return (
@@ -10,9 +11,11 @@ const PatientsSection: NextPage = () => {
                     <Box height={300}>
                         <Heading as={'h3'} fontSize={'xl'}>Manage patients</Heading>
                     </Box>
+                    <Divider width={200}/>
                     <Box height={300}>
                         <Heading as={'h3'} fontSize={'xl'}>Manage Findings</Heading>
                     </Box>
+                    <Divider width={200}/>
                     <Box height={300}>
                         <Heading as={'h3'} fontSize={'xl'}>Manage Observations</Heading>
                     </Box>
