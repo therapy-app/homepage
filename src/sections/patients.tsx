@@ -9,15 +9,14 @@ const PatientsSection: NextPage = () => {
             <Flex height={'auto'} alignItems={'flex-start'}>
                 <VStack width={'full'} align={'flex-start'}>
                     <Box height={300}>
-                        <Heading as={'h3'} fontSize={'xl'}>Manage patients</Heading>
+                        <Heading as={'h3'} fontSize={'3xl'}>Manage patients</Heading>
+                        <Text>Easily create, edit and view patient data using our simple ui. Search any patient and see the most important informations instantly. Use the detail view and analyse the patients progress through visualized data components.</Text>
                     </Box>
-                    <Divider width={200}/>
                     <Box height={300}>
-                        <Heading as={'h3'} fontSize={'xl'}>Manage Findings</Heading>
+                        <Heading as={'h3'} fontSize={'3xl'}>Manage Findings</Heading>
                     </Box>
-                    <Divider width={200}/>
                     <Box height={300}>
-                        <Heading as={'h3'} fontSize={'xl'}>Manage Observations</Heading>
+                        <Heading as={'h3'} fontSize={'3xl'}>Manage Observations</Heading>
                     </Box>
                 </VStack>
                 <VStack width={'full'} position={'sticky'} top={0} >

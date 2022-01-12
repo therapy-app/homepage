@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, HStack, SimpleGrid, Text, useRadio, VStack } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, Button, SimpleGrid, Text, useRadio, VStack } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 
 function RadioCard(props : any) {
@@ -37,10 +37,12 @@ const FaqSection: NextPage = () => {
   return (
     <Container maxW={'container.xl'} py={10} id='faq'>
       <Flex height={'auto'} alignItems={'flex-start'}>
-        <VStack width={'full'} position={'sticky'} top={0} align={'flex-start'}>
-          <Heading as={'h2'} fontSize={'5xl'}>Frequently asked questions</Heading>
-          <RadioCard>General</RadioCard>
-          <RadioCard>Subscription</RadioCard>
+        <VStack width={'full'} position={'sticky'} top={0} align={'flex-start'} spacing={4}>
+          <Heading as={'h2'} fontSize={'6xl'}>Frequently asked questions</Heading>
+          <VStack align={'flex-start'} width={200}>
+            <Button width={'full'}>General</Button>
+            <Button width={'full'}>Subscription</Button>
+          </VStack>
         </VStack>
         <SimpleGrid width={'full'} columns={2} spacing={10}>
           <VStack align={'flex-start'} height='150px'>

@@ -6,6 +6,7 @@ import {
   Flex,
   Heading,
   HStack,
+  Image,
   Link,
   Text,
   VStack,
@@ -24,7 +25,7 @@ const IndexPage: NextPage = () => {
       <Box h={"100vh"}>
         <Nav></Nav>
         <Container maxW={"container.xl"} my={10}>
-          <Flex alignItems={"center"} height={650}>
+          <Flex alignItems={"center"} height={650} justifyContent={'space-between'}>
             <VStack align={"flex-start"} spacing={5}>
               <Heading as={"h1"} fontSize="7xl">
                 Let your practice
