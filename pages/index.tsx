@@ -27,16 +27,15 @@ const IndexPage: NextPage = () => {
           <Flex alignItems={"center"} height={650}>
             <VStack align={"flex-start"} spacing={5}>
               <Heading as={"h1"} fontSize="7xl">
-                Help your practice <br />
+                Let your practice
                 <Text
                   bgGradient="linear(to-l, #36D1DC, #5B86E5)"
                   bgClip="text"
                   fontSize="7xl"
                   fontWeight="extrabold"
-                  display={"inline"}
                 >
                   {" "}
-                  progressing.
+                  feel relief.
                 </Text>
               </Heading>
               <Text fontSize="2xl">Improve your workflow, reduce chaos.</Text>

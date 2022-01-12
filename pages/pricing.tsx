@@ -44,7 +44,6 @@ const PricingPage: NextPage = () => {
           </Text>
         </VStack>
         <HStack
-          spacing={{ base: 4, lg: 10 }}
           py={10}
           textAlign="center"
           justify="center"

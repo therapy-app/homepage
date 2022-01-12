@@ -10,135 +10,113 @@ import {
   Link,
   PopoverContent,
   Stack,
+  Icon,
 } from "@chakra-ui/react";
 import { NextPage } from "next";
+import { IoAnalyticsSharp } from "react-icons/io5";
+import { FaUsersCog } from "react-icons/fa";
+import { BiCalendar } from "react-icons/bi";
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import { IconType } from "react-icons";
+
+const PopUpItem = ({ href, title, description, icon, iconColor } : { href: string, title: string, description: string, icon: IconType, iconColor: string } ) => {
+  return (
+    <Link
+      href={ href }
+      role={"group"}
+      display={"block"}
+      p={2}
+      rounded={"md"}
+      _hover={{ textDecoration: "none", bg: "blue.50" }}
+    >
+      <Stack direction={"row"} align={"center"}>
+        <HStack spacing={4}>
+          <Icon color={iconColor} w={6} h={6} as={icon} />
+          <Box>
+            <Text
+              transition={"all .3s ease"}
+              _groupHover={{ color: "blue.400" }}
+              fontWeight={560}
+            >
+              {title}
+            </Text>
+            <Text fontSize={"sm"} color={"gray"}>
+              {description}
+            </Text>
+          </Box>
+        </HStack>
+        <Flex
+          transition={"all .3s ease"}
+          transform={"translateX(-10px)"}
+          opacity={0}
+          _groupHover={{
+            opacity: "100%",
+            transform: "translateX(0)",
+          }}
+          justify={"flex-end"}
+          align={"center"}
+          flex={1}
+        >
+          <Icon color={"blue.400"} w={5} h={5} as={ChevronRightIcon} />
+        </Flex>
+      </Stack>
+    </Link>
+  );
+};
 
 const Nav: NextPage = () => {
   return (
     <Flex justify={"space-between"} py="3" px="6" alignItems="center">
-      <Link href={"/"}>
-        <a>
-          <Heading as="h3" size="md">
-            therapyapp
-          </Heading>
-        </a>
+      <Link href={"/"} _hover={{ textDecoration: "none" }}>
+        <Heading as="h3" size="md">
+          therapyapp
+        </Heading>
       </Link>
       <HStack spacing={5}>
-        <a>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
-            <PopoverTrigger>
-              <Link
-                p={2}
-                fontSize={"sm"}
-                fontWeight={500}
-                _hover={{
-                  textDecoration: "none",
-                }}
-              >
-                <Text fontSize="md" fontWeight={700}>
-                  Features
-                </Text>
-              </Link>
-            </PopoverTrigger>
-            <PopoverContent
-              border={0}
-              boxShadow={"xl"}
-              p={4}
-              rounded={"xl"}
-              minW={"sm"}
+        <Popover trigger={"hover"} placement={"bottom-start"}>
+          <PopoverTrigger>
+            <Link
+              p={2}
+              fontSize={"sm"}
+              fontWeight={500}
+              _hover={{ textDecoration: "none", color: "gray.500" }}
             >
-              <Stack>
-                <Link
-                  href={"#patients"}
-                  role={"group"}
-                  display={"block"}
-                  p={2}
-                  rounded={"md"}
-                >
-                  <Stack direction={"row"} align={"center"}>
-                    <Box>
-                      <Text
-                        transition={"all .3s ease"}
-                        _groupHover={{ color: "pink.400" }}
-                        fontWeight={500}
-                      >
-                        Patients
-                      </Text>
-                      <Text fontSize={"sm"}>Patients</Text>
-                    </Box>
-                    <Flex
-                      transition={"all .3s ease"}
-                      transform={"translateX(-10px)"}
-                      opacity={0}
-                      _groupHover={{
-                        opacity: "100%",
-                        transform: "translateX(0)",
-                      }}
-                      justify={"flex-end"}
-                      align={"center"}
-                      flex={1}
-                    ></Flex>
-                  </Stack>
-                </Link>
-                <Link
-                  href={"#analytics"}
-                  role={"group"}
-                  display={"block"}
-                  p={2}
-                  rounded={"md"}
-                >
-                  <Stack direction={"row"} align={"center"}>
-                    <Box>
-                      <Text
-                        transition={"all .3s ease"}
-                        _groupHover={{ color: "pink.400" }}
-                        fontWeight={500}
-                      >
-                        Analytics
-                      </Text>
-                      <Text fontSize={"sm"}>Analytics</Text>
-                    </Box>
-                    <Flex
-                      transition={"all .3s ease"}
-                      transform={"translateX(-10px)"}
-                      opacity={0}
-                      _groupHover={{
-                        opacity: "100%",
-                        transform: "translateX(0)",
-                      }}
-                      justify={"flex-end"}
-                      align={"center"}
-                      flex={1}
-                    ></Flex>
-                  </Stack>
-                </Link>
-              </Stack>
-            </PopoverContent>
-          </Popover>
-        </a>
-        <a>
+              <Text fontSize="md" fontWeight={700}>
+                Features
+              </Text>
+            </Link>
+          </PopoverTrigger>
+          <PopoverContent
+            border={0}
+            boxShadow={"xl"}
+            p={4}
+            rounded={"xl"}
+            minW={"sm"}
+          >
+            <Stack>
+              <PopUpItem href="/#analytics" title="Advanced Analytics" description="Analyse your workflow" icon={IoAnalyticsSharp} iconColor="green.400"></PopUpItem>
+              <PopUpItem href="/#patients" title="Patient Management" description="Manage patient data easily" icon={FaUsersCog} iconColor="purple.400"></PopUpItem>
+              <PopUpItem href="/#appointments" title="Appointment Management" description="Appointments, time tracking and more" icon={BiCalendar} iconColor="red.400"></PopUpItem>
+            </Stack>
+          </PopoverContent>
+        </Popover>
+        <Link href={"#faq"} _hover={{ textDecoration: "none", color: "gray.500" }}>
           <Text fontSize="md" fontWeight={700}>
             FAQ
           </Text>
-        </a>
-        <Link href={"pricing"}>
-          <a>
-            <Text fontSize="md" fontWeight={700}>
-              Pricing
-            </Text>
-          </a>
+        </Link>
+        <Link href={"/pricing"} _hover={{ textDecoration: "none", color: "gray.500" }}>
+          <Text fontSize="md" fontWeight={700}>
+            Pricing
+          </Text>
         </Link>
       </HStack>
       <HStack>
-        <Link href={"https://my.therapyapp.ch/auth/signin"}>
-          <a>
-            <Button variant="outline">Sign In</Button>
-          </a>
+        <Link href={"https://my.therapyapp.ch/auth/signin"} _hover={{ textDecoration: "none" }}>
+          <Button variant="outline">Sign In</Button>
         </Link>
-        <Link href={"https://my.therapyapp.ch/auth/signup"}>
-          <a>
-            <Button variant="solid">Sign Up</Button>
-          </a>
+        <Link href={"https://my.therapyapp.ch/auth/signup"} _hover={{ textDecoration: "none" }}>
+          <Button variant="solid">Sign Up</Button>
         </Link>
       </HStack>
     </Flex>

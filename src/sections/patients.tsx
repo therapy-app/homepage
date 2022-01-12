@@ -4,7 +4,7 @@ import { Divider } from '@chakra-ui/react'
 
 const PatientsSection: NextPage = () => {
   return (
-    <Box>
+    <Box id="patients">
         <Container maxW={'container.xl'} py={10}>
             <Flex height={'auto'} alignItems={'flex-start'}>
                 <VStack width={'full'} align={'flex-start'}>

@@ -35,33 +35,33 @@ function RadioCard(props : any) {
 
 const FaqSection: NextPage = () => {
   return (
-    <Container maxW={'container.xl'} py={10}>
-            <Flex height={'auto'} alignItems={'flex-start'}>
-                <VStack width={'full'} position={'sticky'} top={0} align={'flex-start'}>
-                    <Heading as={'h2'} fontSize={'5xl'}>Frequently asked questions</Heading>
-                    <RadioCard>General</RadioCard>
-                    <RadioCard>Subscription</RadioCard>
-                </VStack>
-                <SimpleGrid width={'full'} columns={2} spacing={10}>
-                    <VStack align={'flex-start'} height='150px'>
-                        <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
-                        <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
-                    </VStack>
-                    <VStack align={'flex-start'} height='150px'>
-                        <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
-                        <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
-                    </VStack>
-                    <VStack align={'flex-start'} height='150px'>
-                        <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
-                        <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
-                    </VStack>
-                    <VStack align={'flex-start'} height='150px'>
-                        <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
-                        <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
-                    </VStack>
-                </SimpleGrid>
-            </Flex>
-        </Container>
+    <Container maxW={'container.xl'} py={10} id='faq'>
+      <Flex height={'auto'} alignItems={'flex-start'}>
+        <VStack width={'full'} position={'sticky'} top={0} align={'flex-start'}>
+          <Heading as={'h2'} fontSize={'5xl'}>Frequently asked questions</Heading>
+          <RadioCard>General</RadioCard>
+          <RadioCard>Subscription</RadioCard>
+        </VStack>
+        <SimpleGrid width={'full'} columns={2} spacing={10}>
+          <VStack align={'flex-start'} height='150px'>
+            <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
+            <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
+          </VStack>
+          <VStack align={'flex-start'} height='150px'>
+            <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
+            <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
+          </VStack>
+          <VStack align={'flex-start'} height='150px'>
+            <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
+            <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
+          </VStack>
+          <VStack align={'flex-start'} height='150px'>
+            <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
+            <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
+          </VStack>
+        </SimpleGrid>
+      </Flex>
+    </Container>
   )
 }
 

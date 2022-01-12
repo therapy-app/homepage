@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 
 const AppointmentsSection: NextPage = () => {
   return (
-    <Box bgGradient='linear(to-r, gray.100, transparent)'>
+    <Box id="appoiontments" bgGradient='linear(to-r, gray.100, transparent)'>
         <Container maxW={'container.xl'} height={500} py={10}>
             <Flex>
                 <VStack align={'flex-start'}>
