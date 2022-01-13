@@ -11,11 +11,10 @@ import {
   PopoverContent,
   Stack,
   Icon,
+  Image,
 } from "@chakra-ui/react";
 import { NextPage } from "next";
-import { IoAnalyticsSharp } from "react-icons/io5";
-import { FaUsersCog } from "react-icons/fa";
-import { BiCalendar } from "react-icons/bi";
+import { FcBarChart, FcCalendar, FcCollaboration } from "react-icons/fc";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { IconType } from "react-icons";
 
@@ -68,9 +67,9 @@ const Nav: NextPage = () => {
   return (
     <Flex justify={"space-between"} py="3" px="6" alignItems="center">
       <Link href={"/"} _hover={{ textDecoration: "none" }}>
-        <Heading as="h3" size="md">
-          therapyapp
-        </Heading>
+        <Box width={200}>
+          <Image src="logo.png" alt="Image showing company logo with therapyapp as text."></Image>
+        </Box>
       </Link>
       <HStack spacing={5}>
         <Popover trigger={"hover"} placement={"bottom-start"}>
@@ -94,9 +93,9 @@ const Nav: NextPage = () => {
             minW={"sm"}
           >
             <Stack>
-              <PopUpItem href="/#analytics" title="Advanced Analytics" description="Analyse your workflow" icon={IoAnalyticsSharp} iconColor="green.400"></PopUpItem>
-              <PopUpItem href="/#patients" title="Patient Management" description="Manage patient data easily" icon={FaUsersCog} iconColor="purple.400"></PopUpItem>
-              <PopUpItem href="/#appointments" title="Appointment Management" description="Appointments, time tracking and more" icon={BiCalendar} iconColor="red.400"></PopUpItem>
+              <PopUpItem href="/#analytics" title="Advanced Analytics" description="Analyse your workflow" icon={FcBarChart} iconColor="green.400"></PopUpItem>
+              <PopUpItem href="/#appointments" title="Appointment Management" description="Appointments, time tracking and more" icon={FcCalendar} iconColor="red.400"></PopUpItem>
+              <PopUpItem href="/#patients" title="Patient Management" description="Manage patient data easily" icon={FcCollaboration} iconColor="purple.400"></PopUpItem>
             </Stack>
           </PopoverContent>
         </Popover>

@@ -71,7 +71,7 @@ const PricingPage: NextPage = () => {
               </Box>
               <Box py={4} px={12}>
                 <Text fontWeight="500" fontSize="2xl">
-                  Alpha Tester
+                  Alpha Member
                 </Text>
                 <HStack justifyContent="center">
                   <Text fontSize="3xl" fontWeight="600">
@@ -88,8 +88,8 @@ const PricingPage: NextPage = () => {
               <VStack bg={"gray.50"} py={4} borderBottomRadius={"xl"}>
                 <List spacing={3} textAlign="start" px={12}>
                   <ListItem>Advanced analytics</ListItem>
-                  <ListItem>Patient management</ListItem>
                   <ListItem>Appointment management</ListItem>
+                  <ListItem>Patient management</ListItem>
                   <ListItem>SMS Notifications</ListItem>
                 </List>
                 <Box w="80%" pt={7}>
