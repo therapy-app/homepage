@@ -4,6 +4,7 @@ import {
   Flex,
   Heading,
   HStack,
+  Image,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -13,9 +14,10 @@ const Footer: NextPage = () => {
   return (
     <Box bg={"gray.50"}>
       <Container maxW={"container.xl"} py={4}>
-        <Flex align={'center'}>
+        <VStack spacing={15} align={'flex-start'}>
+          <Image src="logo.png" alt=""></Image>
           <Text>© 2022 therapyapp. All rights reserved</Text>
-        </Flex>
+        </VStack>
       </Container>
     </Box>
   );

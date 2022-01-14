@@ -47,19 +47,11 @@ const FaqSection: NextPage = () => {
         <SimpleGrid width={'full'} columns={2} spacing={10}>
           <VStack align={'flex-start'} height='150px'>
             <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
-            <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
+            <Text fontSize={'lg'}>Therapyapp provides software solutions for therapy practics.</Text>
           </VStack>
           <VStack align={'flex-start'} height='150px'>
-            <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
-            <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
-          </VStack>
-          <VStack align={'flex-start'} height='150px'>
-            <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
-            <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
-          </VStack>
-          <VStack align={'flex-start'} height='150px'>
-            <Heading as={'h3'} fontSize={'xl'}>What is therapyapp?</Heading>
-            <Text fontSize={'lg'}>asdfasdfasdf asdf asdfasd asdfasd fasd fasd</Text>
+            <Heading as={'h3'} fontSize={'xl'}>Where do I download therapyapp?</Heading>
+            <Text fontSize={'lg'}>Therapyapp is fully hosted on the web. No downloads are required.</Text>
           </VStack>
         </SimpleGrid>
       </Flex>

@@ -67,7 +67,7 @@ const Nav: NextPage = () => {
   return (
     <Flex justify={"space-between"} py="3" px="6" alignItems="center">
       <Link href={"/"} _hover={{ textDecoration: "none" }}>
-        <Box width={250}>
+        <Box width={200}>
           <Image src="logo.png" alt="Image showing company logo with therapyapp as text."></Image>
         </Box>
       </Link>

@@ -9,7 +9,7 @@ const AnalyticsSection: NextPage = () => {
                 <VStack align={'flex-start'}>
                     <Text fontWeight={700}>Advanced Analytics</Text>
                     <Heading as={'h2'} fontSize={'5xl'}>Analyse your workflow</Heading>
-                    <Text>TODO:</Text>
+                    <Text></Text>
                 </VStack>
             </Flex>
         </Container>
