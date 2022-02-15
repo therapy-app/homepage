@@ -7,4 +7,4 @@ Visit the site [here](https://therapyapp.ch).
 
 ## Screenshot
 
-<img src="https://maximhuesler.com/therapyapp-home.png" alt="screenshot of the astrovote homepage">
+<img src="https://maximhuesler.com/therapyapp-home.png" alt="screenshot of the therapyapp homepage">
