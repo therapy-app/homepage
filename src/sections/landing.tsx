@@ -53,7 +53,7 @@ const LandingSection: NextPage = () => {
                 <Link href={"pricing"}>discounted offers</Link>. 🐦
               </Text> */}
             </VStack>
-            <Image right={{base: 0, md: -75}} rounded='md' top={{base: 675, md: 175}} width={{base: 500, md: 650, xl: 1000}} pos={'absolute'} zIndex={'-1'} src="dashboard-3d.png" alt="Image showing dashboard."></Image>
+            <Image right={{base: 0, md: -75}} rounded='md' top={{base: 675, md: 200}} width={{base: 500, md: 650, xl: 1000}} pos={'absolute'} zIndex={'-1'} src="dashboard-3d.png" alt="Image showing dashboard."></Image>
           </Flex>
         </Container>
       </Container>
