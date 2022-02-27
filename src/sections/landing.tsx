@@ -15,7 +15,7 @@ import Nav from "../../components/Nav";
 
 const LandingSection: NextPage = () => {
   return (
-    <Box h={"100vh"} >
+    <Box minH={"100vh"}>
       <Nav></Nav>
       <Container maxW={'2000'} pos={'relative'} overflow={'hidden'}>
         <Container maxW={"container.xl"} my={10}>
@@ -45,18 +45,16 @@ const LandingSection: NextPage = () => {
                   </Text>
                 </Button>
               </Link>
+              {/* <Text fontSize={"lg"}>
+                <Link href={"https://my.therapyapp.ch/auth/signup"}>
+                  Join the alpha
+                </Link>{" "}
+                as an earlybird and enjoy{" "}
+                <Link href={"pricing"}>discounted offers</Link>. 🐦
+              </Text> */}
             </VStack>
-            <Image right={-75} boxShadow='xl' rounded='md' width={900} pos={'absolute'} zIndex={'-1'} src="dashboard.png" alt="Image showing dashboard."></Image>
+            <Image right={{base: 0, md: -75}} rounded='md' top={{base: 675, md: 175}} width={{base: 500, md: 650, xl: 1000}} pos={'absolute'} zIndex={'-1'} src="dashboard-3d.png" alt="Image showing dashboard."></Image>
           </Flex>
-          <Center>
-            <Text fontSize={"1xl"}>
-              <Link href={"https://my.therapyapp.ch/auth/signup"}>
-                Join the alpha
-              </Link>{" "}
-              as an earlybird and enjoy{" "}
-              <Link href={"pricing"}>discounted offers</Link>. 🐦
-            </Text>
-          </Center>
         </Container>
       </Container>
     </Box>

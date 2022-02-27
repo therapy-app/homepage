@@ -5,14 +5,16 @@ import AppointmentsSection from "../src/sections/appointments";
 import FaqSection from "../src/sections/faq";
 import LandingSection from "../src/sections/landing";
 import PatientsSection from "../src/sections/patients";
+import SecureSection from "../src/sections/secure";
 
 const IndexPage: NextPage = () => {
   return (
     <>
       <LandingSection></LandingSection>
-      <AnalyticsSection></AnalyticsSection>
-      <PatientsSection></PatientsSection>
+      {/* <AnalyticsSection></AnalyticsSection>
       <AppointmentsSection></AppointmentsSection>
+      <PatientsSection></PatientsSection> */}
+      <SecureSection></SecureSection>
       <FaqSection></FaqSection>
       <Footer></Footer>
     </>

@@ -1,14 +1,14 @@
 import { Box, Container, Flex, Heading, HStack, Text, VStack } from '@chakra-ui/react'
 import type { NextPage } from 'next'
+import { ReactElement } from 'react';
 
 const AppointmentsSection: NextPage = () => {
   return (
-    <Box id="appointments" bgGradient='linear(to-r, gray.100, transparent)'>
+    <Box id="appointments">
         <Container maxW={'container.xl'} height={500} py={10}>
             <Flex>
                 <VStack align={'flex-start'}>
-                    <Text fontWeight={700}>Appointments and badging</Text>
-                    <Heading as={'h2'} fontSize={'5xl'}>Manage Appointments</Heading>
+                    <Heading as={'h2'} fontSize={'4xl'}>Manage Appointments</Heading>
                     <Text></Text>
                 </VStack>
             </Flex>
