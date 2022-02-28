@@ -8,7 +8,7 @@ const SecureSection: NextPage = () => {
   return (
     <Box id="appointments">
         <Container maxW={'container.xl'} py={10} borderStartRadius={15} bgGradient='linear(to-r, blue.50, transparent)' position={'relative'}>
-            <VStack px={20} align={'flex-start'} spacing={10}>
+            <VStack px={10} align={'flex-start'} spacing={10}>
                 <VStack align={'flex-start'}>
                     <Heading as={'h2'} fontSize={'4xl'}>Security</Heading>
                     <Text>We keep your data safe.</Text>

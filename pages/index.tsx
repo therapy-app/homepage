@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import AnalyticsSection from "../src/sections/analytics";
 import AppointmentsSection from "../src/sections/appointments";
 import BrowserSupportSection from "../src/sections/browserSupport";
+import AdvantagesSection from "../src/sections/advantages";
 import FaqSection from "../src/sections/faq";
 import LandingSection from "../src/sections/landing";
 import PatientsSection from "../src/sections/patients";
@@ -12,12 +13,13 @@ const IndexPage: NextPage = () => {
   return (
     <>
       <LandingSection></LandingSection>
+      <AdvantagesSection></AdvantagesSection>
       {/* <AnalyticsSection></AnalyticsSection>
       <AppointmentsSection></AppointmentsSection>
       <PatientsSection></PatientsSection> */}
       <BrowserSupportSection></BrowserSupportSection>
       <SecureSection></SecureSection>
-      <FaqSection></FaqSection>
+      {/* <FaqSection></FaqSection> */}
       <Footer></Footer>
     </>
   );
