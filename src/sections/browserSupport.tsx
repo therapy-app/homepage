@@ -1,7 +1,9 @@
 import { Box, Container, Flex, Heading, HStack, SimpleGrid, Text, VStack, Image } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import { ReactElement } from 'react';
+import Reveal from 'react-awesome-reveal';
 import { FcDataEncryption, FcDataProtection, FcKey, FcLineChart, FcPlus, FcPrivacy } from 'react-icons/fc';
+import { fadeInBottom } from '../../styles/animations';
 import Feature from '../../widgets/feature';
 
 const BrowserSupportSection: NextPage = () => {
