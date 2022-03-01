@@ -71,7 +71,7 @@ const Nav: NextPage = () => {
           <Image src="logo.png" alt="Image showing company logo with therapyapp as text."></Image>
         </Box>
       </Link>
-      <HStack spacing={5}>
+      <HStack spacing={5} d={{base: 'none', md: 'flex'}}>
         <Popover trigger={"hover"} placement={"bottom-start"}>
           <PopoverTrigger>
             <Link

@@ -15,9 +15,9 @@ const IndexPage: NextPage = () => {
       <LandingSection></LandingSection>
       <AdvantagesSection></AdvantagesSection>
       {/* <AnalyticsSection></AnalyticsSection>
-      <AppointmentsSection></AppointmentsSection>
-      <PatientsSection></PatientsSection> */}
+      <AppointmentsSection></AppointmentsSection> */}
       <BrowserSupportSection></BrowserSupportSection>
+      <PatientsSection></PatientsSection>
       <SecureSection></SecureSection>
       {/* <FaqSection></FaqSection> */}
       <Footer></Footer>

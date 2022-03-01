@@ -39,8 +39,8 @@ const Footer: NextPage = () => {
               </Text>
               <Stack spacing="3" shouldWrapChildren>
                 <Button variant="link">How it works</Button>
+                <Button variant="link">Features</Button>
                 <Button variant="link">Pricing</Button>
-                <Button variant="link">Use Cases</Button>
               </Stack>
             </Stack>
             <Stack spacing="4" minW="36" flex="1">
@@ -50,7 +50,6 @@ const Footer: NextPage = () => {
               <Stack spacing="3" shouldWrapChildren>
                 <Button variant="link">Privacy</Button>
                 <Button variant="link">Terms</Button>
-                <Button variant="link">License</Button>
               </Stack>
             </Stack>
           </Stack>
