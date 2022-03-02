@@ -8,7 +8,9 @@ const JoinAlphaBox: NextPage = () => {
             <VStack spacing={4}>
                 <Heading color={'white'} as={'h2'}>Interested?</Heading>
                 <Text color={'gray.100'} fontWeight={600} fontSize={'xl'}>Try out the alpha of therapyapp for free.</Text>
-                <Button color={'purple.400'} backgroundColor={'white'} borderRadius={'xl'} size={'lg'}>Join the alpha</Button>
+                <a href="https://my.therapyapp.ch/auth/signup">
+                    <Button color={'purple.400'} backgroundColor={'white'} borderRadius={'xl'} size={'lg'}>Join the alpha</Button>
+                </a>
             </VStack>
         </Flex>
     </Container>
