@@ -8,9 +8,9 @@ import Feature from '../../widgets/feature';
 
 const AdvantagesSection: NextPage = () => {
   return (
-    <Box bgGradient='linear(to-r, gray.50, transparent)'>
-        <Container maxW={'container.xl'} py={10} position={'relative'}>
-            <Flex direction={{base: 'column', lg: 'row'}} justifyContent={'space-between'} alignItems={'center'} gap={10}>
+    <Box bgGradient='linear(to-r, gray.50, transparent)' mb={20}>
+        <Container maxW={{md: 'container.md', lg: 'container.lg', xl: 'container.xl'}} position={'relative'}>
+            <Flex direction={{base: 'column', lg: 'row'}} justifyContent={'space-between'} alignItems={'center'} gap={10} py={10}>
                 <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={10}>
                     <Reveal keyframes={fadeInBottom}>
                         <Feature

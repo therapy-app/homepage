@@ -18,7 +18,7 @@ import type { NextPage } from "next";
 
 const Footer: NextPage = () => {
   return (
-    <Container as="footer" maxW={'container.xl'}>
+    <Container as="footer" maxW={{md: 'container.md', lg: 'container.lg', xl: 'container.xl'}}>
       <Stack
         spacing="8"
         direction={{ base: 'column', md: 'row' }}

@@ -8,6 +8,7 @@ import FaqSection from "../src/sections/faq";
 import LandingSection from "../src/sections/landing";
 import PatientsSection from "../src/sections/patients";
 import SecureSection from "../src/sections/secure";
+import JoinAlphaBox from "../src/sections/joinAlphaBox";
 
 const IndexPage: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const IndexPage: NextPage = () => {
       <PatientsSection></PatientsSection>
       <SecureSection></SecureSection>
       {/* <FaqSection></FaqSection> */}
+      <JoinAlphaBox></JoinAlphaBox>
       <Footer></Footer>
     </>
   );

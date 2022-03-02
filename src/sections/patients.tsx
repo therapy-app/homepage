@@ -19,75 +19,73 @@ const PatientFeature = ({ title, description, imgSrc }: { title: string, descrip
 
 const PatientsSection: NextPage = () => {
   return (
-    <Box id="patients">
-        <Container maxW={'container.xl'} py={75} mb={10} borderTopRadius={15} bgGradient='linear(to-b, purple.50, transparent)'>
-            <Flex direction={{base: 'column', lg: 'row'}}>
-                <VStack width={'full'} height={'900px'} position={{ base: 'relative', lg: 'sticky'}} top={50}>
-                    <Box>
-                        <Reveal keyframes={fadeInBottom}>
-                            <Box mb={10} textAlign={'center'}>
-                                <Heading mb={5} as={'h2'} fontSize={'4xl'}>Patient management</Heading>
-                                <Text>The patient management module for professionals. Manage patient details, observations, findings and store patient data.</Text>
+    <Container maxW={{md: 'container.md', lg: 'container.lg', xl: 'container.xl'}} mb={20}>
+        <Flex direction={{base: 'column', lg: 'row'}} py={75} mb={10} borderTopRadius={'2xl'} bgGradient='linear(to-b, purple.50, transparent)'>
+            <VStack width={'full'} height={'900px'} position={{ base: 'relative', lg: 'sticky'}} top={50}>
+                <Box px={10} >
+                    <Reveal keyframes={fadeInBottom}>
+                        <Box mb={10} textAlign={'center'}>
+                            <Heading mb={5} as={'h2'} fontSize={'4xl'}>Patient management</Heading>
+                            <Text>The patient management module for professionals. Manage patient details, observations, findings and store patient data.</Text>
+                        </Box>
+                        <Box mb={10}>
+                            <Image boxShadow={'lg'} src="patients-list.png" alt="Patient list"></Image>
+                        </Box>
+                        <VStack align={'center'} spacing={10}>
+                            <Box maxW={500}>
+                                <Feature
+                                    icon={FcImport}
+                                    title={'Easy data import'}
+                                    text={'Migrating to therapyapp? We support data imports following the XYZ standard.'}
+                                />
                             </Box>
-                            <Box px={10} mb={10}>
-                                <Image boxShadow={'lg'} src="patients-list.png" alt="Patient list"></Image>
+                            <Box maxW={500}>
+                                <Feature
+                                    icon={FcExport}
+                                    title={'Data export'}
+                                    text={'We support a data export as CSV, JSON, XML following the XYZ standard. Generate word and pdf files for progress reports or data visualization.'}
+                                />
                             </Box>
-                            <VStack align={'center'} spacing={10}>
-                                <Box maxW={500}>
-                                    <Feature
-                                        icon={FcImport}
-                                        title={'Easy data import'}
-                                        text={'Migrating to therapyapp? We support data imports following the XYZ standard.'}
-                                    />
-                                </Box>
-                                <Box maxW={500}>
-                                    <Feature
-                                        icon={FcExport}
-                                        title={'Data export'}
-                                        text={'We support a data export as CSV, JSON, XML following the XYZ standard. Generate word and pdf files for progress reports or data visualization.'}
-                                    />
-                                </Box>
-                            </VStack>
-                        </Reveal>
-                    </Box>
+                        </VStack>
+                    </Reveal>
+                </Box>
+            </VStack>
+            <HStack width={'full'} h={'1700px'}>
+                <Divider d={{base: 'none', lg: 'block'}} orientation={'vertical'}></Divider>
+                <VStack width={'full'}>
+                    <PatientFeature 
+                        title={'Manage patients'} 
+                        description={'.'}
+                        imgSrc={'patients-detail.png'}
+                    ></PatientFeature>
+                    <Center width={'full'} py={5}>
+                        <Divider width={'80%'}></Divider>
+                    </Center>
+                    <PatientFeature 
+                        title={'Manage Observations'} 
+                        description={'.'}
+                        imgSrc={'patients-detail.png'}
+                    ></PatientFeature>
+                    <Center width={'full'} py={5}>
+                        <Divider width={'80%'}></Divider>
+                    </Center>
+                    <PatientFeature 
+                        title={'Manage Findings'} 
+                        description={'.'}
+                        imgSrc={'patients-detail.png'}
+                    ></PatientFeature>
+                    <Center width={'full'} py={5}>
+                        <Divider width={'80%'}></Divider>
+                    </Center>
+                    <PatientFeature 
+                        title={'Manage Data'} 
+                        description={'.'}
+                        imgSrc={'patients-detail.png'}
+                    ></PatientFeature>
                 </VStack>
-                <HStack width={'full'} h={'1700px'}>
-                    <Divider d={{base: 'none', lg: 'block'}} orientation={'vertical'}></Divider>
-                    <VStack width={'full'}>
-                        <PatientFeature 
-                            title={'Manage patients'} 
-                            description={'.'}
-                            imgSrc={'patients-detail.png'}
-                        ></PatientFeature>
-                        <Center width={'full'} py={5}>
-                            <Divider width={'80%'}></Divider>
-                        </Center>
-                        <PatientFeature 
-                            title={'Manage Observations'} 
-                            description={'.'}
-                            imgSrc={'patients-detail.png'}
-                        ></PatientFeature>
-                        <Center width={'full'} py={5}>
-                            <Divider width={'80%'}></Divider>
-                        </Center>
-                        <PatientFeature 
-                            title={'Manage Findings'} 
-                            description={'.'}
-                            imgSrc={'patients-detail.png'}
-                        ></PatientFeature>
-                        <Center width={'full'} py={5}>
-                            <Divider width={'80%'}></Divider>
-                        </Center>
-                        <PatientFeature 
-                            title={'Manage Data'} 
-                            description={'.'}
-                            imgSrc={'patients-detail.png'}
-                        ></PatientFeature>
-                    </VStack>
-                </HStack>
-            </Flex>
-        </Container>
-    </Box>
+            </HStack>
+        </Flex>
+    </Container>
   )
 }
 

@@ -9,7 +9,7 @@ import Feature from '../../widgets/feature';
 const BrowserSupportSection: NextPage = () => {
   return (
     <Box id="appointments">
-        <VStack align={'center'} spacing={10} p={20}>
+        <VStack align={'center'} spacing={10} mb={20} px={10}>
             <VStack>
                 <Heading as={'h2'} fontSize={'4xl'}>Browser Support</Heading>
                 <Text>Compatible with the newest browsers.</Text>
