@@ -60,7 +60,7 @@ const LandingSection: NextPage = () => {
       </Container>
       <Box position={'absolute'} right={-50} top={{base: 400, lg: 200, xl: 150}} zIndex={-1}>
         <Reveal keyframes={fadeInLeft}>
-          <Image rounded='md' mt={40} width={{base: 750,  xl: 1000}} src={dashboard.src} alt="Image showing dashboard." priority={true}></Image>
+          <Image rounded='md' mt={40} width={{base: 750,  xl: 1000}} src={dashboard.src} alt="Image showing dashboard." priority="true"></Image>
         </Reveal>
       </Box>
     </Box>
