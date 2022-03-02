@@ -17,7 +17,7 @@ import { fadeInLeft } from "../../styles/animations";
 
 const LandingSection: NextPage = () => {
   return (
-    <Container minH={"100vh"} maxW={'2000px'} overflow={'hidden'} position={'relative'}>
+    <Box minH={"100vh"} maxW={'2200px'} overflow={'hidden'} position={'relative'}>
       <Nav></Nav>
       <Container maxW={"container.xl"} my={10}>
         <Flex
@@ -62,7 +62,7 @@ const LandingSection: NextPage = () => {
           <Image rounded='md'  mt={40} width={{base: 750,  xl: 1000}} src="dashboard-3d.png" alt="Image showing dashboard."></Image>
         </Reveal>
       </Box>
-    </Container>
+    </Box>
   );
 };
 
