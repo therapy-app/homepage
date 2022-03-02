@@ -17,7 +17,7 @@ import { fadeInLeft } from "../../styles/animations";
 
 const LandingSection: NextPage = () => {
   return (
-    <Box minH={"100vh"}  overflow={'hidden'}>
+    <Container minH={"100vh"} maxW={'2000px'} overflow={'hidden'} position={'relative'}>
       <Nav></Nav>
       <Container maxW={"container.xl"} my={10}>
         <Flex
@@ -55,12 +55,14 @@ const LandingSection: NextPage = () => {
               <Link href={"pricing"}>discounted offers</Link>. 🐦
             </Text> */}
           </VStack>
-          <Reveal keyframes={fadeInLeft}>
-            <Image rounded='md' mt={40} mr={{base: 0, lg: -250, xl: -350}} width={{base: 600, lg: 750, xl: 1000}} src="dashboard-3d.png" alt="Image showing dashboard."></Image>
-          </Reveal>
         </Flex>
       </Container>
-    </Box>
+      <Box position={'absolute'} right={-50} top={{base: 400, lg: 200, xl: 150}} zIndex={-1}>
+        <Reveal keyframes={fadeInLeft}>
+          <Image rounded='md'  mt={40} width={{base: 750,  xl: 1000}} src="dashboard-3d.png" alt="Image showing dashboard."></Image>
+        </Reveal>
+      </Box>
+    </Container>
   );
 };
 
