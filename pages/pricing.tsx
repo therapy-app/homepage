@@ -8,25 +8,57 @@ import {
   ListItem,
   List,
   Button,
+  ListIcon,
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import Link from "next/link";
 import { ReactNode } from "react";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import FaqSection from "../src/sections/faq";
+import { FaCheck } from 'react-icons/fa';
 
-function PriceWrapper({ children }: { children: ReactNode }) {
+const PricePlan = () => {
   return (
-    <Box
-      mb={4}
-      shadow="base"
-      borderWidth="1px"
-      alignSelf={{ base: "center", lg: "flex-start" }}
-      borderColor={"gray.200"}
-      borderRadius={"xl"}
+    <HStack
+      py={10}
+      textAlign="center"
+      justify="center"
+      maxW={'350px'}
     >
-      {children}
-    </Box>
+      <Box shadow={'base'} borderRadius={"2xl"} w={'full'}>
+        <Box py={5} px={10} mb={5} textAlign={'left'}>
+          <Text fontWeight="700" fontSize="xl">
+            Alpha
+          </Text>
+          <HStack mb="4">
+            <Text fontSize="5xl" fontWeight="800">
+              CHF
+            </Text>
+            <Text fontSize="5xl" fontWeight="800">
+              0
+            </Text>
+            <Text fontSize="xl" color="gray.500">
+              /month
+            </Text>
+          </HStack>
+          <Text>Become an alpha tester tester</Text>
+        </Box>
+        <VStack pb={10} borderBottomRadius={"xl"}>
+          <List spacing={3} textAlign="start" mb={5}>
+            <ListItem><ListIcon as={FaCheck} color='blue.500'/>Advanced analytics</ListItem>
+            <ListItem><ListIcon as={FaCheck} color='blue.500'/>Patient management</ListItem>
+            <ListItem><ListIcon as={FaCheck} color='blue.500'/>Appointment management</ListItem>
+            <ListItem><ListIcon as={FaCheck} color='blue.500'/>SMS Notifications</ListItem>
+          </List>
+          <Box px={10} w="full">
+            <a href="https://my.therapyapp.ch/auth/signup">
+              <Button w={'full'} colorScheme='blue' borderRadius={'xl'}>Try now</Button>
+            </a>
+          </Box>
+        </VStack>
+      </Box>
+    </HStack>
   );
 }
 
@@ -43,66 +75,10 @@ const PricingPage: NextPage = () => {
             The following plans are only valid for the alpha phase.
           </Text>
         </VStack>
-        <HStack
-          py={10}
-          textAlign="center"
-          justify="center"
-        >
-          <PriceWrapper>
-            <Box position="relative">
-              <Box
-                position="absolute"
-                top="-16px"
-                left="50%"
-                style={{ transform: "translate(-50%)" }}
-              >
-                <Text
-                  textTransform="uppercase"
-                  bg={"blue.300"}
-                  px={3}
-                  py={1}
-                  color={"gray.900"}
-                  fontSize="sm"
-                  fontWeight="600"
-                  rounded="xl"
-                >
-                  Most Popular
-                </Text>
-              </Box>
-              <Box py={4} px={12}>
-                <Text fontWeight="500" fontSize="2xl">
-                  Alpha Member
-                </Text>
-                <HStack justifyContent="center">
-                  <Text fontSize="3xl" fontWeight="600">
-                    $
-                  </Text>
-                  <Text fontSize="5xl" fontWeight="900">
-                    0
-                  </Text>
-                  <Text fontSize="3xl" color="gray.500">
-                    /month
-                  </Text>
-                </HStack>
-              </Box>
-              <VStack bg={"gray.50"} py={4} borderBottomRadius={"xl"}>
-                <List spacing={3} textAlign="start" px={12}>
-                  <ListItem>Advanced analytics</ListItem>
-                  <ListItem>Appointment management</ListItem>
-                  <ListItem>Patient management</ListItem>
-                  <ListItem>SMS Notifications</ListItem>
-                </List>
-                <Box w="80%" pt={7}>
-                  <Button w="full" colorScheme="blue">
-                    Start trial
-                  </Button>
-                </Box>
-              </VStack>
-            </Box>
-          </PriceWrapper>
-        </HStack>
+        <VStack>
+          <PricePlan></PricePlan>
+        </VStack>
       </Box>
-      <FaqSection></FaqSection>
       <Footer></Footer>
     </>
   );
