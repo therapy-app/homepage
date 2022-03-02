@@ -16,8 +16,8 @@ const SecureSection: NextPage = () => {
                     <Text>We keep your data safe.</Text>
                 </VStack>
                 <Flex direction={{base: 'column', lg: 'row'}} justifyContent={'space-between'} alignItems={'center'} gap={10}>
-                    <Reveal keyframes={fadeInBottom}>
-                        <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={10}>
+                    <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={10}>
+                        <Reveal keyframes={fadeInBottom}>
                             <Feature
                                 icon={FcDataEncryption}
                                 title={'End to end encryption'}
@@ -38,8 +38,8 @@ const SecureSection: NextPage = () => {
                                 title={'GDPA compliant'}
                                 text={'GDPA is a standard of keeping data secure and encrypted.'}
                             />
-                        </SimpleGrid>
-                    </Reveal>
+                        </Reveal>
+                    </SimpleGrid>
                     <Image right={0} rounded='md' top={0} width={{base: 300, md: 400, xl: 500}} src="meditation.svg" alt="Image showing dashboard."></Image>
                 </Flex>
             </VStack>

@@ -11,8 +11,8 @@ const AdvantagesSection: NextPage = () => {
     <Box bgGradient='linear(to-r, gray.50, transparent)'>
         <Container maxW={'container.xl'} py={10} position={'relative'}>
             <Flex direction={{base: 'column', lg: 'row'}} justifyContent={'space-between'} alignItems={'center'} gap={10}>
-                <Reveal keyframes={fadeInBottom}>
-                    <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={10}>
+                <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={10}>
+                    <Reveal keyframes={fadeInBottom}>
                         <Feature
                             icon={FcOrgUnit}
                             title={'All-In-One'}
@@ -33,8 +33,8 @@ const AdvantagesSection: NextPage = () => {
                             title={'Analytics'}
                             text={'Leverage our charting to spot gaps and improve your workflow.'}
                         />
-                    </SimpleGrid>
-                </Reveal>
+                    </Reveal>
+                </SimpleGrid>
                 <Image right={0} rounded='md' top={0} width={{base: 400, md: 500, xl: 600}} src="rocket-riding.svg" alt="Image showing dashboard."></Image>
             </Flex>
         </Container>

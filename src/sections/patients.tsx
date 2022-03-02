@@ -38,14 +38,15 @@ const PatientsSection: NextPage = () => {
                                         icon={FcImport}
                                         title={'Easy data import'}
                                         text={'Migrating to therapyapp? We support data imports following the XYZ standard.'}
-                                        />
+                                    />
+                                </Box>
+                                <Box maxW={500}>
                                     <Feature
                                         icon={FcExport}
                                         title={'Data export'}
                                         text={'We support a data export as CSV, JSON, XML following the XYZ standard. Generate word and pdf files for progress reports or data visualization.'}
-                                        />
+                                    />
                                 </Box>
-
                             </VStack>
                         </Reveal>
                     </Box>
@@ -57,7 +58,7 @@ const PatientsSection: NextPage = () => {
                             title={'Manage patients'} 
                             description={'.'}
                             imgSrc={'patients-detail.png'}
-                            ></PatientFeature>
+                        ></PatientFeature>
                         <Center width={'full'} py={5}>
                             <Divider width={'80%'}></Divider>
                         </Center>
@@ -65,7 +66,7 @@ const PatientsSection: NextPage = () => {
                             title={'Manage Observations'} 
                             description={'.'}
                             imgSrc={'patients-detail.png'}
-                            ></PatientFeature>
+                        ></PatientFeature>
                         <Center width={'full'} py={5}>
                             <Divider width={'80%'}></Divider>
                         </Center>
@@ -73,7 +74,7 @@ const PatientsSection: NextPage = () => {
                             title={'Manage Findings'} 
                             description={'.'}
                             imgSrc={'patients-detail.png'}
-                            ></PatientFeature>
+                        ></PatientFeature>
                         <Center width={'full'} py={5}>
                             <Divider width={'80%'}></Divider>
                         </Center>
@@ -81,7 +82,7 @@ const PatientsSection: NextPage = () => {
                             title={'Manage Data'} 
                             description={'.'}
                             imgSrc={'patients-detail.png'}
-                            ></PatientFeature>
+                        ></PatientFeature>
                     </VStack>
                 </HStack>
             </Flex>
