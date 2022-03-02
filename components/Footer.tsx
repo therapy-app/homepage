@@ -15,6 +15,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import logo from '../public/logo.png';
 
 const Footer: NextPage = () => {
   return (
@@ -26,7 +27,7 @@ const Footer: NextPage = () => {
         py={{ base: '12', md: '16' }}
       >
         <Stack spacing={{ base: '6', md: '8' }} align="start">
-          <Image src="logo.png" alt="Image of logo"></Image>
+          <Image src={logo.src} alt="Image of logo"></Image>
         </Stack>
         <Stack
           direction={{ base: 'column-reverse', md: 'column', lg: 'row' }}

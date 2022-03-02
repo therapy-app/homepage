@@ -5,14 +5,15 @@ import Feature from '../../widgets/feature';
 import { FcBarChart, FcExport, FcImport } from 'react-icons/fc';
 import Reveal from 'react-awesome-reveal';
 import { fadeInBottom } from '../../styles/animations';
+import patientListImg from '../../public/patients-list.png'
+import patientDetailImg from '../../public/patients-detail.png'
 
-
-const PatientFeature = ({ title, description, imgSrc }: { title: string, description: string, imgSrc: string}) => {
+const PatientFeature = ({ title, description, imgSrc }: { title: string, description: string, imgSrc: StaticImageData}) => {
     return (
         <VStack height={350} px={50} width={'full'}>
             <Heading as={'h3'} fontSize={'2xl'}>{ title }</Heading>
             <Text textAlign={'center'}>{ description }</Text>
-            <Image boxShadow={'lg'} src={imgSrc} alt="Patient list"></Image>
+            <Image boxShadow={'lg'} src={imgSrc.src} alt="Patient list"></Image>
         </VStack>
     );
 }
@@ -29,7 +30,7 @@ const PatientsSection: NextPage = () => {
                             <Text>The patient management module for professionals. Manage patient details, observations, findings and store patient data.</Text>
                         </Box>
                         <Box mb={10}>
-                            <Image boxShadow={'lg'} src="patients-list.png" alt="Patient list"></Image>
+                            <Image boxShadow={'lg'} src={patientListImg.src} alt="Patient list"></Image>
                         </Box>
                         <VStack align={'center'} spacing={10}>
                             <Box maxW={500}>
@@ -56,7 +57,7 @@ const PatientsSection: NextPage = () => {
                     <PatientFeature 
                         title={'Manage patients'} 
                         description={'.'}
-                        imgSrc={'patients-detail.png'}
+                        imgSrc={patientDetailImg}
                     ></PatientFeature>
                     <Center width={'full'} py={5}>
                         <Divider width={'80%'}></Divider>
@@ -64,7 +65,7 @@ const PatientsSection: NextPage = () => {
                     <PatientFeature 
                         title={'Manage Observations'} 
                         description={'.'}
-                        imgSrc={'patients-detail.png'}
+                        imgSrc={patientDetailImg}
                     ></PatientFeature>
                     <Center width={'full'} py={5}>
                         <Divider width={'80%'}></Divider>
@@ -72,7 +73,7 @@ const PatientsSection: NextPage = () => {
                     <PatientFeature 
                         title={'Manage Findings'} 
                         description={'.'}
-                        imgSrc={'patients-detail.png'}
+                        imgSrc={patientDetailImg}
                     ></PatientFeature>
                     <Center width={'full'} py={5}>
                         <Divider width={'80%'}></Divider>
@@ -80,7 +81,7 @@ const PatientsSection: NextPage = () => {
                     <PatientFeature 
                         title={'Manage Data'} 
                         description={'.'}
-                        imgSrc={'patients-detail.png'}
+                        imgSrc={patientDetailImg}
                     ></PatientFeature>
                 </VStack>
             </HStack>

@@ -17,6 +17,7 @@ import { NextPage } from "next";
 import { FcBarChart, FcCalendar, FcCollaboration } from "react-icons/fc";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { IconType } from "react-icons";
+import logo from '../public/logo.png';
 
 const PopUpItem = ({ href, title, description, icon, iconColor } : { href: string, title: string, description: string, icon: IconType, iconColor: string } ) => {
   return (
@@ -68,7 +69,7 @@ const Nav: NextPage = () => {
     <Flex justify={"space-between"} py="3" px="6" alignItems="center">
       <Link href={"/"} _hover={{ textDecoration: "none" }}>
         <Box width={200}>
-          <Image src="logo.png" alt="Image showing company logo with therapyapp as text."></Image>
+          <Image src={logo.src} alt="Image showing company logo with therapyapp as text."></Image>
         </Box>
       </Link>
       <HStack spacing={5} d={{base: 'none', md: 'flex'}}>

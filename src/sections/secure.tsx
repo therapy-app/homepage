@@ -5,6 +5,7 @@ import Reveal from 'react-awesome-reveal';
 import { FcDataEncryption, FcDataProtection, FcKey, FcLineChart, FcPlus, FcPrivacy } from 'react-icons/fc';
 import { fadeInBottom } from '../../styles/animations';
 import Feature from '../../widgets/feature';
+import meditationSvg from '../../public/meditation.svg';
 
 const SecureSection: NextPage = () => {
   return (
@@ -39,7 +40,7 @@ const SecureSection: NextPage = () => {
                         />
                     </Reveal>
                 </SimpleGrid>
-                <Image right={0} rounded='md' top={0} width={{base: 300, md: 400, xl: 500}} src="meditation.svg" alt="Image showing dashboard."></Image>
+                <Image right={0} rounded='md' top={0} width={{base: 300, md: 400, xl: 500}} src={meditationSvg.src} alt="Image showing dashboard."></Image>
             </Flex>
         </VStack>
     </Container>

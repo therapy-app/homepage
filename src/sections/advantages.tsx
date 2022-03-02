@@ -5,6 +5,7 @@ import Reveal from 'react-awesome-reveal';
 import { FcBarChart, FcDataEncryption, FcDataProtection, FcDoNotInsert, FcDownload, FcGlobe, FcKey, FcLineChart, FcOk, FcOrgUnit, FcPlus, FcPrivacy } from 'react-icons/fc';
 import { fadeInBottom } from '../../styles/animations';
 import Feature from '../../widgets/feature';
+import rocketImg from '../../public/rocket-riding.svg'
 
 const AdvantagesSection: NextPage = () => {
   return (
@@ -35,7 +36,7 @@ const AdvantagesSection: NextPage = () => {
                         />
                     </Reveal>
                 </SimpleGrid>
-                <Image right={0} rounded='md' top={0} width={{base: 400, md: 500, xl: 600}} src="rocket-riding.svg" alt="Image showing dashboard."></Image>
+                <Image right={0} rounded='md' top={0} width={{base: 400, md: 500, xl: 600}} src={rocketImg.src} alt="Image showing dashboard."></Image>
             </Flex>
         </Container>
     </Box>
